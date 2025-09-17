@@ -52,12 +52,13 @@ body {
   height: calc(63% - 5px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: rgba(135, 206, 235, 0.95);
-  border: 2px solid #333;
+  background-color: rgba(169, 192, 208, 0.95);
+  border: 2px solid #6b7280;
   border-radius: 25px;
   padding: 20px;
   align-items: center;
   z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .circle-area {
@@ -69,9 +70,9 @@ body {
 .circle {
   width: 100px;
   height: 100px;
-  border: 3px solid #e91e63;
+  border: 3px solid #8b5a5a;
   border-radius: 50%;
-  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, 0.8);
 }
 
 .text-area {
@@ -79,7 +80,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: #e91e63;
+  color: #8b5a5a;
   font-style: italic;
   font-weight: 500;
 }
@@ -93,14 +94,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(135, 206, 235, 0.95);
-  border: 2px solid #e91e63;
+  background-color: rgba(169, 192, 208, 0.95);
+  border: 2px solid #8b5a5a;
   border-radius: 25px;
   font-size: 14px;
-  color: #e91e63;
+  color: #8b5a5a;
   font-style: italic;
   font-weight: 500;
   z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .aspiration-section {
@@ -112,14 +114,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(135, 206, 235, 0.95);
-  border: 2px solid #e91e63;
+  background-color: rgba(169, 192, 208, 0.95);
+  border: 2px solid #8b5a5a;
   border-radius: 25px;
   font-size: 14px;
-  color: #e91e63;
+  color: #8b5a5a;
   font-style: italic;
   font-weight: 500;
   z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive design for mobile */
