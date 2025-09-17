@@ -9,70 +9,71 @@
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 300px 60px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
   grid-template-areas:
     "header header header header"
-    "sidebar sidebar main main"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
-  gap: 5px;
-  min-height: 100vh;
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8";
+  gap: 10px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   grid-area: header;
-  background-color: #ff6b6b;
-  color: white;
-  padding: 20px;
+  background-color: #87CEEB;
+  color: black;
+  padding: 15px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #333;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  background-color: #4ecdc4;
-  color: white;
-  padding: 20px;
+.box {
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  color: #333;
 }
 
-.main {
-  grid-area: main;
-  background-color: #95e1d3;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: #ffa502;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.box:nth-child(2) { grid-area: box1; }
+.box:nth-child(3) { grid-area: box2; }
+.box:nth-child(4) { grid-area: box3; }
+.box:nth-child(5) { grid-area: box4; }
+.box:nth-child(6) { grid-area: box5; }
+.box:nth-child(7) { grid-area: box6; }
+.box:nth-child(8) { grid-area: box7; }
+.box:nth-child(9) { grid-area: box8; }
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
     grid-template-areas:
-      "header"
-      "sidebar"
-      "main"
-      "footer";
+      "header header"
+      "box1 box2"
+      "box3 box4"
+      "box5 box6"
+      "box7 box8";
+    width: 95%;
+    height: auto;
   }
 }
