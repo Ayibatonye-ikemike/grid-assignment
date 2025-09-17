@@ -49,7 +49,7 @@ body {
   top: 18px;
   left: 8px;
   right: 8px;
-  height: calc(65% - 5px);
+  height: calc(55% - 5px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(135, 206, 235, 0.95);
