@@ -46,10 +46,10 @@ body {
 /* Overlaying containers */
 .top-section {
   position: absolute;
-  top: 18px;
+  top: 8px;
   left: 8px;
   right: 8px;
-  height: calc(63% - 5px);
+  height: calc(68% - 5px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(30, 144, 255, 0.95);
