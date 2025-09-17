@@ -46,10 +46,10 @@ body {
 /* Overlaying containers */
 .top-section {
   position: absolute;
-  top: calc(33.33% + 10px);
+  top: 18px;
   left: 8px;
   right: 8px;
-  height: calc(45% - 5px);
+  height: calc(65% - 5px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(135, 206, 235, 0.95);
@@ -88,7 +88,7 @@ body {
   position: absolute;
   bottom: 25px;
   left: 8px;
-  width: calc(55% - 5px);
+  width: calc(52% - 5px);
   height: calc(28% - 5px);
   display: flex;
   justify-content: center;
@@ -107,7 +107,7 @@ body {
   position: absolute;
   bottom: 25px;
   right: 8px;
-  width: calc(55% - 5px);
+  width: calc(52% - 5px);
   height: calc(28% - 5px);
   display: flex;
   justify-content: center;
