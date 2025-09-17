@@ -47,8 +47,8 @@ body {
 .top-section {
   position: absolute;
   top: 15px;
-  left: 15px;
-  right: 15px;
+  left: calc(25% + 5px);
+  right: calc(25% + 5px);
   height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,8 +87,8 @@ body {
 .hobbies-section {
   position: absolute;
   bottom: 15px;
-  left: 15px;
-  width: 48%;
+  left: calc(25% + 5px);
+  width: 23%;
   height: 30%;
   display: flex;
   justify-content: center;
@@ -106,8 +106,8 @@ body {
 .aspiration-section {
   position: absolute;
   bottom: 15px;
-  right: 15px;
-  width: 48%;
+  right: calc(25% + 5px);
+  width: 23%;
   height: 30%;
   display: flex;
   justify-content: center;
