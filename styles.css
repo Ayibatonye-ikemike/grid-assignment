@@ -1,71 +1,78 @@
-body {  
-  height: 100vh;
-  width: 100%;
+/* CSS Grid Assignment - Clean Slate */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 300px 60px;
+  grid-template-areas:
+    "header header header header"
+    "sidebar sidebar main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  gap: 5px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.container {
-  height: 450px;
-  width: 600px;
-  display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  gap: 5px;
-  padding: 2px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.big-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background: #87CEFA;
-}
-
-.small-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background: #87CEFA;
-}
-
-.flex-box {
+.sidebar {
+  grid-area: sidebar;
+  background-color: #4ecdc4;
+  color: white;
+  padding: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: white;
-  border: 1px solid #ff4d88;
-  border-radius: 10px;
-  min-height: 50px;
-  font-weight: bold;
+  justify-content: center;
 }
 
-@media (max-width: 768px) { 
-  .container {
-    height: 600px;
-    width: 95%;
-    grid-template-rows: 3fr 1fr 1fr;
-    gap: 5px;
-  }
+.main {
+  grid-area: main;
+  background-color: #95e1d3;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .big-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 15px;
-    gap: 5px;
-  }
+.footer {
+  grid-area: footer;
+  background-color: #ffa502;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .small-container {
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .grid-container {
     grid-template-columns: 1fr;
-    padding: 15px;
-    gap: 5px;
+    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
   }
 }
