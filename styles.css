@@ -46,10 +46,10 @@ body {
 /* Overlaying containers */
 .top-section {
   position: absolute;
-  top: 8px;
+  top: 18px;
   left: 8px;
   right: 8px;
-  height: calc(68% - 1px);
+  height: calc(58% - 5px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(135, 206, 235, 0.95);
@@ -86,10 +86,10 @@ body {
 
 .hobbies-section {
   position: absolute;
-  bottom: 8px;
+  bottom: 18px;
   left: 8px;
-  width: calc(50% - 9px);
-  height: calc(35% - 1px);
+  width: calc(50% - 14px);
+  height: calc(28% - 5px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,10 +105,10 @@ body {
 
 .aspiration-section {
   position: absolute;
-  bottom: 8px;
+  bottom: 18px;
   right: 8px;
-  width: calc(50% - 9px);
-  height: calc(35% - 1px);
+  width: calc(50% - 14px);
+  height: calc(28% - 5px);
   display: flex;
   justify-content: center;
   align-items: center;
