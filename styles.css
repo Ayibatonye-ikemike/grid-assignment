@@ -90,7 +90,7 @@ body {
   bottom: 15px;
   left: 8px;
   width: calc(50% - 6px);
-  height: calc(28% - 5px);
+  height: calc(32% - 5px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ body {
   bottom: 15px;
   right: 8px;
   width: calc(50% - 6px);
-  height: calc(28% - 5px);
+  height: calc(32% - 5px);
   display: flex;
   justify-content: center;
   align-items: center;
