@@ -46,7 +46,7 @@ body {
 /* Overlaying containers */
 .top-section {
   position: absolute;
-  top: 5px;
+  top: 12px;
   left: 8px;
   right: 8px;
   height: calc(63% - 5px);
